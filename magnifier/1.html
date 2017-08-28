@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        #did {
+            width: 300px;
+            height: 300px;
+            border: 1px solid blue;
+            overflow: hidden;
+            display: none;
+            position: absolute;
+        }
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+</head>
+
+<body>
+<h2 id="hid">jquery实例--放大镜效果</h2>
+<img id="mid" src="22.jpg" width="384" />
+<div id="did">
+    <img src="22.jpg" />
+</div>
+
+<script type="text/javascript">
+    //当鼠标在图片上、在图片上面移动、离开图片时的操作
+    $("#mid").mouseover(
+        function(){
+            //获取被放大图片定位对象
+            var position = $(this).position();
+            $("#did").css({top:position.top + "px",left:position.left + $(this).width()+ 5 +"px"}).show();
+
+        }
+    ).mouseout(function(){
+        $("#did").hide();
+    }).mousemove(
+        function(e){
+            var position = $(this).position();
+
+            //计算鼠标在图片上面的偏移坐标
+            var x = e.pageX - position.left;
+            var y = e.pageY - position.top;
+
+            //定位放大镜的距离
+            $("#did").scrollTop(y*5 -150).scrollLeft(x*5 -150);
+
+        });
+</script>
+</body>
+
+</html>
