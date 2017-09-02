@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+</head>
+<body>
+    <form name="numf" onsubmit="return checkForm()">
+        输入账号：
+        <input type="text" name="fnum"/>
+        <input type="submit" name="up" value="是否重复"／>
+    </form>
+<script>
+    function checkForm() {
+        var num=document.forms["numf"]["fnum"].value;
+        if(num==null||num==""){
+            alert("请输入账号");
+            return false;
+        }else {
+            alert("YES");
+        }
+    }
+</script>
+</body>
+</html>
