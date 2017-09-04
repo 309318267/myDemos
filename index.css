@@ -44,6 +44,7 @@ a{
 a:hover{
     background-color: aqua;
     color:white;
+    font-size: 25px;
 }
 li:hover ul{ 
     display: block;
