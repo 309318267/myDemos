@@ -20,6 +20,7 @@
     left:1440px;
     width:auto;
     white-space: nowrap;
+    overflow: hidden；
 }
 .text{
     position: absolute;
