@@ -19,6 +19,7 @@
     position: absolute;
     left:1440px;
     width:auto;
+    white-space: nowrap;
 }
 .text{
     position: absolute;
