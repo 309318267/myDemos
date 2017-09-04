@@ -18,6 +18,7 @@
 .float{
     position: absolute;
     left:1440px;
+    width:auto;
 }
 .text{
     position: absolute;
