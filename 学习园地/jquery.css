@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.content{
+    background-attachment: fixed;
+    background-image: url(floor5.jpg);
+    
+}
+hr{
+    opacity: 0;
+    height: 100px;
+}
+/* global */
+header{
+    width:80%;
+    height: 300px;
+    background-color: red;
+    margin: 0 auto;
+}
+header img{
+    width: 100%;
+    height: 300px;
+}
+.top_list{
+    width: 80%;
+    height: 40px;
+    background-color: #040419;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+}
+.top_list li{
+    float: left;
+    width: 15%;
+    height: 40px;
+    border-left: 1px solid white;
+}
+.top_list h3{
+    float: left;
+    margin: 0 70px 0 30px;
+}
+.top_list li:hover{
+    color:black;
+    background-color: white;
+}
+.top_list .active{
+    color:black;
+    background-color: white;
+}
+/* 导航条 */
+.container{
+    width: 500%;
+    height: 800px;
+}
+.content{
+    width: 18%;
+    padding-top: 20px;
+    padding-left:2%;
+    float: left;
+    overflow: hidden;
+}
+.display-method{
+    width: 45%;
+    float: left;
+    margin: 20px 0;
+}
+.display-method li{
+    width: 30%;
+    float: left;
+    margin: 20px 0;
+    text-align: center;
+    height: 20px;
+    margin: 0;
+}
+.display{
+    height: 200px;
+    margin-right: 20px;
+    border: 1px solid gray;
+}
+.display_box{
+    height: 140px;
+    width: 140px;
+    border: 1px solid grey;
+    margin: 15px;
+    float: left;
+    background-color: black;
+    color: white;
+    text-align: center
+}
+.method{
+    height: 50px;
+    line-height: 50px;
+}
+select{
+    margin: 0 20px;
+}
+button{
+    width: 60px;
+    height: 20px;
+}
+.ptitle{
+    width: 100%;
+    float: left;
+    
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    .box{
+        width: 400px;
+        height: 400px;
+        position: relative;
+        border: 1px solid gray;
+        margin-left: 500px;
+        margin-top:200px;
+    }
+    .circle{
+        width: 200px;
+        height: 400px;
+        position: absolute;
+        overflow: hidden;
+        top:0;
+    }
+    .left{
+        left:0;
+    }
+    .right{
+        right: 0;
+    }
+    .inside_circle{
+        width: 320px;
+        height: 320px;
+        border: 40px  solid transparent;
+        border-radius: 50%;
+        position: absolute;
+        top:0;
+    }
+    .circle_left{
+        border-top: 40px solid fuchsia;
+        border-left: 40px solid fuchsia;
+        left: 0;
+        transform: rotate(-135deg);
+        animation: circleinLoad_left 3s linear;
+    }
+    .circle_right{
+        border-bottom: 40px solid fuchsia;
+        border-right: 40px solid fuchsia;
+        right: 0;
+        transform: rotate(-45deg);
+        animation: circleinLoad_right 3s linear;
+    }
+    @keyframes circleinLoad_right{
+        0%{
+            transform: rotate(-225deg);
+        }
+        50%,100%{
+            transform: rotate(-45deg);
+        }
+    }
+    @keyframes circleinLoad_left{
+    0%,50%{
+        transform: rotate(-225deg);
+    }  
+    100%{
+        transform: rotate(-135deg);
+            }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="circle left">
+            <div class="inside_circle circle_left"></div>
+        </div>
+        <div class="circle right">
+            <div class="inside_circle circle_right"></div>
+        </div>
+    </div>
+</body>
+</html>
