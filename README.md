@@ -1,1 +1,2 @@
-some interesting demos
+##9/14/2017
+*删除button中的a子元素，省去a元素默认事件导致浏览器刷新的麻烦
