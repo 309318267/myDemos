@@ -1,10 +1,8 @@
 $(function(){
-    $("a").click(function(event){
-        event.preventDefault();
-        var cur = $(this).parent().index();
+    $("button").click(function(){
+        var cur = $(this).index();
         $(this).addClass("active")
-        .parent().siblings()
-        .children().removeClass();
+        .siblings().removeClass();
         // botton增加active
         var skin = $("div[class*=blur]").attr("class");
         var now = "blur"+cur;
