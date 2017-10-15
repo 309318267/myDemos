@@ -1,0 +1,10 @@
+.components-progress {
+  width: 100%;
+  height: 3px;
+  background-color: #ddd;
+  cursor: pointer;
+  font-size: 18px;
+}
+.components-progress .progress {
+  height: 3px;
+}
